@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim's Fashion World - Dapatkan Pakaian Stylish Anda!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bg1.jpg'); /* Gambar latar belakang */
+            background-size: cover; /* Menyesuaikan ukuran gambar dengan layar */
+            background-position: center; /* Memusatkan gambar */
+            color: #333;
+        }
+        .header {
+            background-color: rgba(76, 175, 80, 0.7); /* Hijau transparan */
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .header p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 223, 186, 0.8); /* Oranye Muda Transparan */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #2980b9; /* Biru */
+            margin-top: 40px;
+            font-size: 2.5em;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        .cta-button {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            padding: 12px;
+            background-color: #ff9800; /* Oranye */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+            font-size: 1.1em;
+        }
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+        .form-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="email"] {
+            width: 80%;
+            max-width: 300px;
+            padding: 12px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #2980b9; /* Biru */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #1c598a;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .product {
+            flex: 1 1 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #e8f5e9; /* Hijau Muda */
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .product-image {
+            max-width: 300px; /* Atur lebar maksimum gambar */
+            height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .product:hover .product-image {
+            transform: scale(1.1);
+        }
+        .testimonial {
+            background-color: #ffe0b2; /* Oranye Muda */
+            padding: 20px;
+            border-left: 4px solid #ff9800; /* Oranye */
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Kim's Fashion World</h1>
+        <p>Temukan Pakaian Stylish untuk Setiap Kesempatan!</p>
+    </div>
+    <div class="container">
+        <h2>Dapatkan Pakaian Stylish Anda!</h2>
+        <p>Temukan koleksi terbaru baju dan celana dengan desain yang menarik. Nikmati diskon 30% untuk pembelian pertama!</p>
+        <a href="#form" class="cta-button">Belanja Sekarang</a>
+
+        <h2>Produk Kami</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/bajustyle.jpg" alt="Baju Stylish" class="product-image">
+                <h3>Baju Stylish</h3>
+                <p>Harga: Rp 150.000</p>
+                <p>Deskripsi: Baju keren dengan bahan nyaman untuk sehari-hari.</p>
+            </div>
+            <div class="product">
+                <img src="images/trendi.jpg" alt="Celana Trendi" class="product-image">
+                <h3>Celana Trendi</h3>
+                <p>Harga: Rp 200.000</p>
+                <p>Deskripsi: Celana modis yang cocok untuk berbagai kesempatan.</p>
+            </div>
+            <div class="product">
+                <img src="images/kaos.jpg" alt="Baju Kaos" class="product-image">
+                <h3>Baju Kaos</h3>
+                <p>Harga: Rp 120.000</p>
+                <p>Deskripsi: Kaos nyaman untuk penggunaan sehari-hari.</p>
+            </div>
+            <div class="product">
+                <img src="images/celanapendek.jpg" alt="Celana Pendek" class="product-image">
+                <h3>Celana Pendek</h3>
+                <p>Harga: Rp 180.000</p>
+                <p>Deskripsi: Celana pendek yang nyaman untuk musim panas.</p>
+            </div>
+            <div class="product">
+                <img src="images/formal.jpg" alt="Baju Formal" class="product-image">
+                <h3>Baju Formal</h3>
+                <p>Harga: Rp 250.000</p>
+                <p>Deskripsi: Baju formal cocok untuk acara resmi.</p>
+            </div>
+            <div class="product">
+                <img src="images/jaket.jpg" alt="Jaket Stylish" class="product-image">
+                <h3>Jaket Stylish</h3>
+                <p>Harga: Rp 300.000</p>
+                <p>Deskripsi: Jaket trendy untuk tampilan yang lebih stylish.</p>
+            </div>
+        </div>
+
+        <h2>Testimonial Pelanggan</h2>
+        <div class="testimonial">
+            <p>"Pakaian yang saya beli sangat nyaman dan stylish! Sangat puas dengan kualitasnya!" - <strong>Ani</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Pengiriman cepat dan produk sesuai dengan deskripsi. Saya akan membeli lagi!" - <strong>Budi</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Kualitas bahan sangat baik dan desainnya menarik. Saya suka!" - <strong>Rina</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Sangat puas dengan pelayanan dan produk yang diterima. Terima kasih!" - <strong>Joko</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Pakaian yang nyaman untuk digunakan sehari-hari. Saya pasti akan kembali!" - <strong>Lisa</strong></p>
+        </div>
+
+        <div id="form" class="form-group">
+            <h2>Isi Formulir di Bawah Ini</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <input type="submit" value="Kirim">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
